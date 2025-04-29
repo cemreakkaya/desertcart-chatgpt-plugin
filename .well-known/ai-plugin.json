@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Desertcart",
+  "name_for_model": "desertcart",
+  "description_for_human": "Shop international products and ship them globally with Desertcart.",
+  "description_for_model": "Plugin for searching products on Desertcart based on user queries.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://<your-username>.github.io/desertcart-chatgpt-plugin/openapi.yaml"
+  },
+  "logo_url": "https://<your-username>.github.io/desertcart-chatgpt-plugin/logo.png",
+  "contact_email": "support@desertcart.com",
+  "legal_info_url": "https://www.desertcart.ae/terms"
+}
