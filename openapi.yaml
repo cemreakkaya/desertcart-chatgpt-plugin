@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: Desertcart Shopping API
+  description: Search for products available on Desertcart
+  version: "1.0"
+servers:
+  - url: https://www.desertcart.ae
+paths:
+  /api/products/search:
+    get:
+      summary: Search for products on Desertcart
+      operationId: searchProducts
+      parameters:
+        - name: query
+          in: query
+          description: Keyword to search for (e.g., laptop, sneakers, etc.)
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of matching products
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  products:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        price:
+                          type: string
+                        url:
+                          type: string
+                        image:
+                          type: string
