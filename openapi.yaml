@@ -4,7 +4,7 @@ info:
   description: Search for products available on Desertcart
   version: "1.0"
 servers:
-  - url: https://www.desertcart.ae
+  - url: https://cdd7-34-41-134-125.ngrok-free.app
 paths:
   /api/products/search:
     get:
